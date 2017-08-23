@@ -1,0 +1,9 @@
+hash: 32e7ce7a70a1d2bf94a07dd7790936dba3563fa68ee6f430015999306341533c
+updated: 2017-08-23T23:14:01.261725778+09:00
+imports:
+- name: github.com/prometheus/prometheus
+  version: a52f082939a566d5269671e98be06fc6bdf61d09
+  subpackages:
+  - promql
+  - rules
+testImports: []
