@@ -1,7 +1,24 @@
-package: .
+package: github.com/kkohtaka/prometheus-rule-tester
 import:
 - package: github.com/prometheus/prometheus
   version: ~2.0.0-beta.2
   subpackages:
   - promql
   - rules
+- package: github.com/prometheus/common
+  subpackages:
+  - model
+- package: k8s.io/client-go
+  version: v3.0.0
+  subpackages:
+  - pkg/api
+- package: github.com/emicklei/go-restful
+  version: v1.2
+  subpackages:
+  - swagger
+- package: github.com/Azure/azure-sdk-for-go
+  version: v6.0.0-beta
+  subpackages:
+  - arm
+  - management
+  - storage

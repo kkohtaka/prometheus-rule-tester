@@ -1,0 +1,8 @@
+ALERT HTTPRequestRateLow
+  IF http_requests{group="canary", job="app-server"} < 100
+  FOR 1m
+  LABELS {
+    severity = "critical",
+  }
+  ANNOTATIONS {
+  }
